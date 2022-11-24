@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <title>Services</title>
+  </head>
+
+  <body style="background-color: rgb(243, 243, 243)">
+    <h1 class="display-1 fw-bold text-center">Services</h1>
+    <!--    class display-1 คือ ขนาดตัวอักษรสำหรับ Header มี 4 ขนาด => display-1 ใหญ่สุด ไล่ไปถึงเล็กสุดในนี้คือ display-4
+            fw-bold คือ ขนาดความหนาตัวอักษร มี => fw-bolder หนามาก , fw-bold หนา , fw-normal ปกติ , fw-light บาง , fw-lighter บางมาก , fst-italic ตัวเอียง , fst-normal ปกติสำหรับ font ทั่วไป -->
+    <div class="container">
+        <!--    ก่อนจะสร้าง class row ต้องมี class container ด้วย container จะจัดให้ row อยู่ center อยู่แล้ว container มีขนาด 1140px เป็นมาตรฐาน
+                ถ้าอยากให้ container ติดขอบจอ/เต็มจอ ใช้เป็น container-fluid -->
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-xl-3 mb-3">
+            <!--    col-sm-12 คือ แบ่ง column สำหรับจอขนาดเล็ก ex.smartphone
+                    col-md-6 คือ แบ่ง column สำหรับจอขนาดกลาง ex.tablet
+                    col-xl-3 คือ แบ่ง column สำหรับจอขนาดใหญ่ ex.desktop
+                    สามารถใส่แบบนี้ได้ เวลาอยู่ในแต่ละขนาดจอ column จะได้เป็นตามที่เรากำหนด
+                    [ใน 1 row จะมี 12 column ใน column จะมี row อีกก็ได้]
+                    ex.งานนี้กำหนดให้ desktop เป็น 3:3:3:3
+                                    tablet เป็น 6:6
+                                    smartphone เป็น 12  -->
+          <div
+            class="card border-dark"
+            style="background-color: rgb(247, 232, 214); border-radius: 10px"
+          >
+          <!-- border-dark คือ สีเส้นขอบสีดำ -->
+            <p align="center">
+              <br /><br /><br /><br />Show image<br /><br /><br /><br />
+            </p>
+            <!-- ตรงนี้ใช้ <br /> ในการจัดหน้าเพื่อให้คำว่า Show image อยู่ตรงกลาง เป็นวิธีที่ไม่ค่อยแนะนำเพราะทำให้ code ดูไม่ค่อยสวยงาม ต้องศึกษาหาวิธีการเพิ่มเติมที่สามารถทำให้คำนี้อยู่ตรงตามต้นฉบับที่กำหนดไว้ให้มาโดยไม่ใช้ <br /> -->
+            <div class="card-body" style="background-color: rgb(240, 248, 255)">
+              <h1 class="card-title fw-bolder">Title</h1>
+              <!-- ตัวนี้เป็นแถบขาตรงกลาง bootstrap ที่เป็น card จะแบ่งเป็น 3 ส่วนคือ header -->
+              <h5 class="card-text fw-normal">
+                Lorem ipsem dolor sit amet consecteter adipisicing elit.
+                Inventore voluptates magnam asperiores illo similique. Itaque
+                facere ipsa fugiat voluptatibus aliquam dolores nam aut impedit
+                earum laboriosam ducimus eaque, facilis suscipi?
+              </h5>
+            </div>
+            <div
+              class="card-footer text-center"
+              style="
+                height: 50px;
+                background-color: aqua;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+              "
+            >
+              <a class="fst-normal" href="...">More Detail</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-xl-3 mb-3">
+          <div
+            class="card border-dark"
+            style="background-color: rgb(247, 232, 214); border-radius: 10px"
+          >
+            <p class="text-center">
+              <br /><br /><br /><br />Show image<br /><br /><br /><br />
+            </p>
+            <div class="card-body" style="background-color: rgb(240, 248, 255)">
+              <h1 class="card-title fw-bolder">Title</h1>
+              <h5 class="card-text fw-normal">
+                Lorem ipsem dolor sit amet consecteter adipisicing elit.
+                Inventore voluptates magnam asperiores illo similique. Itaque
+                facere ipsa fugiat voluptatibus aliquam dolores nam aut impedit
+                earum laboriosam ducimus eaque, facilis suscipi?
+              </h5>
+            </div>
+            <div
+              class="card-footer text-center"
+              style="
+                height: 50px;
+                background-color: aqua;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+              "
+            >
+              <a class="fw-normal" href="...">More Detail</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-xl-3 mb-3">
+          <div
+            class="card border-dark"
+            style="background-color: rgb(247, 232, 214); border-radius: 10px"
+          >
+            <p class="text-center">
+              <br /><br /><br /><br />Show image<br /><br /><br /><br />
+            </p>
+            <div class="card-body" style="background-color: rgb(240, 248, 255)">
+              <h1 class="card-title fw-bolder">Title</h1>
+              <h5 class="card-text fw-normal">
+                Lorem ipsem dolor sit amet consecteter adipisicing elit.
+                Inventore voluptates magnam asperiores illo similique. Itaque
+                facere ipsa fugiat voluptatibus aliquam dolores nam aut impedit
+                earum laboriosam ducimus eaque, facilis suscipi?
+              </h5>
+            </div>
+            <div
+              class="card-footer text-center"
+              style="
+                height: 50px;
+                background-color: aqua;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+              "
+            >
+              <a class="fw-normal" href="...">More Detail</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-xl-3">
+          <div
+            class="card border-dark"
+            style="background-color: rgb(247, 232, 214); border-radius: 10px"
+          >
+            <p class="text-center">
+              <br /><br /><br /><br />Show image<br /><br /><br /><br />
+            </p>
+            <div class="card-body" style="background-color: rgb(240, 248, 255)">
+              <h1 class="card-title fw-bolder">Title</h1>
+              <h5 class="card-text fw-normal">
+                Lorem ipsem dolor sit amet consecteter adipisicing elit.
+                Inventore voluptates magnam asperiores illo similique. Itaque
+                facere ipsa fugiat voluptatibus aliquam dolores nam aut impedit
+                earum laboriosam ducimus eaque, facilis suscipi?
+              </h5>
+            </div>
+            <div
+              class="card-footer text-center"
+              style="
+                height: 50px;
+                background-color: aqua;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+              "
+            >
+              <a class="fw-normal" href="...">More Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
