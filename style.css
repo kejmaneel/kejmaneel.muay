@@ -67,7 +67,7 @@ html[data-theme="light"]{
 }
 
 .card-commu{
-    padding: 15px;
+    padding: 10px;
     font-family: "Roboto",sans-serif;
     background-color: #bfcfd8;
     width: auto;
@@ -78,7 +78,7 @@ html[data-theme="light"]{
     border-color: #000000;
 }
 .btn-commu{
-    padding: 15px;
+    padding: 10px;
     font-family: "Roboto",sans-serif;
     background-color: #e4e4e4;
     font-weight: bold;
@@ -103,8 +103,15 @@ html[data-theme="light"]{
 
 .title{
     font-family: "Roboto",sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: lighter;
+    margin-top: 10px;
+}
+
+.commutext{
+    font-family: "Roboto",sans-serif;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 /* Search */
