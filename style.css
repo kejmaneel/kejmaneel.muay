@@ -62,13 +62,8 @@ html[data-theme="light"]{
     background-color: rgb(220, 240, 224);
     border-radius: 25px;
     color: #26282C;
-    padding: 10px;
-    margin: 30px;
-}
-
-.commu{
-    padding: 10px;
-    margin: 20px;
+    padding: 5px;
+    margin: 5px;
 }
 
 .card-commu{
