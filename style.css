@@ -106,3 +106,49 @@ html[data-theme="light"]{
     font-size: 15px;
     font-weight: lighter;
 }
+
+/* Search */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto",sans-serif;
+}
+
+.input-box{
+    position: relative;
+    height: 20px;
+    max-width: 150px;
+    width: 100%;
+    margin: 0 30px;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+.input-box input{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0 15px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+}
+
+.input-box .search{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-box .close-icon{
+    position: absolute;
+    right: -45px;
+    top: 50%;
+    transform: translate(-50%);
+    padding: 5px;
+}
