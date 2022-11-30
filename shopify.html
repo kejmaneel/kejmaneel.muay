@@ -25,7 +25,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-lg sticky-top navbar">
       <div class="container">
         <a href="#" class="navbar-brand">
           <img
@@ -44,7 +44,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="fa-solid fa-bars"></span>
         </button>
         <!-- Menu bar -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -89,37 +89,11 @@
             </li>
           </ul>
           <ul class="navbar-nav ml-auto">
-            <!-- Search -->
-            <!-- <form class="form-inline my-2 my-lg-0">
-            <i class="fa fa-search"></i>
-            <input
-              class="form-control mr-sm-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-          </form> -->
-
             <div class="input-box m-2" style="align-items: center">
               <input type="text" placeholder="Search" />
               <span class="search"><i class="fa fa-search"></i></span>
             </div>
-
-            <!-- <div class="searchbox">
-            <input type="text" class="searchtext" placeholder="Search">
-            <a href="#" class="searchbtn">
-              <i class="fa fa-search"></i>
-            </a>
-          </div> -->
-
-            <!-- <li class="active">
-            <i class="fa fa-search" aria-hidden="true"></i>
-            <div class="search-box">
-            <input type="text">
-            <input type="button" value="search">
-            </div>
-          </li> -->
-
+  
             <!-- dark mode -->
             <i class="nav-item fas fa-sun fa-2x theme_icon"></i>
             <li class="nav-item">
@@ -210,22 +184,22 @@
           <div class="row mb-3">
             <div class="col col-xl-6 col-lg-6 col-md-6 col-12 mb-3">
               <h5 class="btn-cd" href="#">
-                <span class="fa-solid fa-puzzle-piece fa-2x"></span>   Apps
+                <span class="fa-solid fa-puzzle-piece fa-2x"></span> Apps
               </h5>
             </div>
             <div class="col col-xl-6 col-lg-6 col-md-6 col-12 mb-3">
               <h5 class="btn-cd" href="#">
-                <span class="fa-solid fa-brush fa-2x"></span>   Themes
+                <span class="fa-solid fa-brush fa-2x"></span> Themes
               </h5>
             </div>
             <div class="col col-xl-6 col-lg-6 col-md-6 col-12 mb-3">
               <h5 class="btn-cd" href="#">
-                <span class="fa-solid fa-shop fa-2x"></span>   Storefronts
+                <span class="fa-solid fa-shop fa-2x"></span> Storefronts
               </h5>
             </div>
             <div class="col col-xl-6 col-lg-6 col-md-6 col-12 mb-3">
               <h5 class="btn-cd" href="#">
-                <span class="fa-solid fa-store fa-2x"></span>   Marketplaces
+                <span class="fa-solid fa-store fa-2x"></span> Marketplaces
               </h5>
             </div>
           </div>
@@ -266,7 +240,7 @@
       </div>
       <div class="col col-xl-6 col-lg-12 col-md-12 col-12">
         <div
-          class="card m-5 border-dark"
+          class="m-5 card-pay"
           style="padding: 50px; border-radius: 0px; border-width: 3px"
         >
           <i class="fa-brands fa-bitcoin fa-2x"></i>
@@ -347,76 +321,79 @@
       </div>
     </div>
 
-    <!-- footer ตัวอย่างในจอเว็บจะลอยไม่ติดขอบล่าง แต่พอย่อจอขนาดเล็กกว่าจอเว็บบน desktop ขอบ footer จะติดขอบล่างตามปกติ พี่แนนแนะนำให้ทำเป็น 2 box แล้วซ่อนเอาด้วย display none -->
-    <div class="card m-4" style="border-radius: 25px">
+    <!-- footer ตัวอย่างในจอเว็บจะลอยไม่ติดขอบล่าง แต่พอย่อจอขนาดเล็กกว่าจอเว็บบน desktop ขอบ footer จะติดขอบล่างตามปกติ พี่แนนแนะนำให้ทำเป็น 2 box แล้วซ่อนเอาด้วย display none/display block -->
+    <!-- box-1 -->
+    <div
+      id="box-1"
+      class="m-4 box-1"
+      style="border-radius: 25px;"
+    >
       <div class="container">
-        <div class="row card-body">
-          <div class="containercard-title col col-xl-2 col-lg-2 col-md-4 col-6">
+        <div class="row">
+          <div class="col col-xl-2 col-lg-2 col-md-4 col-6">
             <div class="mt-3">
-              <p class="font-weight-bold" style="color: #000000">
-                News and updates
-              </p>
-              <a href="#" style="color: #696969"> Develpoer changelog </a>
+              <p class="font-weight-bold">News and updates</p>
+              <a href="#"> Develpoer changelog </a>
               <br />
-              <a href="#" style="color: #696969"> Shopify status </a>
+              <a href="#"> Shopify status </a>
             </div>
           </div>
-          <div class="card-title col col-xl-2 col-lg-2 col-md-4 col-6">
+          <div class="col col-xl-2 col-lg-2 col-md-4 col-6">
             <div class="mt-3">
-              <p class="font-weight-bold" style="color: #000000">Blogs</p>
-              <a href="#" style="color: #696969"> Partner blog </a>
+              <p class="font-weight-bold">Blogs</p>
+              <a href="#"> Partner blog </a>
               <br />
-              <a href="#" style="color: #696969"> Engineering blog </a>
+              <a href="#"> Engineering blog </a>
               <br />
-              <a href="#" style="color: #696969"> UX blog </a>
+              <a href="#"> UX blog </a>
             </div>
           </div>
-          <div class="card-title col col-xl-2 col-lg-2 col-md-4 col-6">
+          <div class="col col-xl-2 col-lg-2 col-md-4 col-6">
             <div class="mt-3">
-              <p class="font-weight-bold" style="color: #000000">Community</p>
-              <a href="#" style="color: #696969"> Develpoer forums </a>
-              <a href="#" style="color: #696969"> Devs Discord </a>
+              <p class="font-weight-bold">Community</p>
+              <a href="#"> Develpoer forums </a>
+              <a href="#"> Devs Discord </a>
               <br />
-              <a href="#" style="color: #696969"> Facebook group </a>
+              <a href="#"> Facebook group </a>
             </div>
           </div>
-          <div class="card-title col col-xl-2 col-lg-2 col-md-4 col-6">
+          <div class="col col-xl-2 col-lg-2 col-md-4 col-6">
             <div class="mt-3">
-              <p class="font-weight-bold" style="color: #000000">Social</p>
-              <a href="#" style="color: #696969"
+              <p class="font-weight-bold">Social</p>
+              <a href="#"
                 ><i class="fa-brands fa-twitch"></i>
                 Twitch
               </a>
               <br />
-              <a href="#" style="color: #696969"
+              <a href="#"
                 ><i class="fa-brands fa-youtube"></i>
                 Youtube
               </a>
               <br />
-              <a href="#" style="color: #696969"
+              <a href="#"
                 ><i class="fa-brands fa-twitter"></i>
                 Twitter
               </a>
             </div>
           </div>
-          <div class="card-title col col-xl-2 col-lg-2 col-md-4 col-6">
+          <div class="col col-xl-2 col-lg-2 col-md-4 col-6">
             <div class="mt-3">
-              <p class="font-weight-bold" style="color: #000000">Unite</p>
-              <a href="#" style="color: #696969"> Meetups </a>
+              <p class="font-weight-bold">Events</p>
+              <a href="#"> Unite </a>
               <br />
-              <a href="#" style="color: #696969"> Partner Town Hall </a>
+              <a href="#"> Meetups </a>
+              <br />
+              <a href="#"> Partner Town Hall </a>
             </div>
           </div>
-          <div class="card-title col col-xl-2 col-lg-2 col-md-4 col-6">
+          <div class="col col-xl-2 col-lg-2 col-md-4 col-6">
             <div class="mt-3">
-              <p class="font-weight-bold" style="color: #000000">
-                Terms of Service
-              </p>
-              <a href="#" style="color: #696969"> API Terms of Sevice </a>
+              <p class="font-weight-bold">Terms of Service</p>
+              <a href="#"> API Terms of Sevice </a>
               <br />
-              <a href="#" style="color: #696969"> Privacy policy </a>
+              <a href="#"> Privacy policy </a>
               <br />
-              <a href="#" style="color: #696969"> Partner program agreement </a>
+              <a href="#"> Partner program agreement </a>
             </div>
           </div>
         </div>
@@ -425,21 +402,111 @@
       <div
         class="card-footer"
         style="
-          background-color: #c2c2c2;
           border-bottom-left-radius: 25px;
           border-bottom-right-radius: 25px;
         "
       >
         <div class="container mb-3">
-          <a href="#" class="title m-3" style="color: #686868">About Shopify</a>
-          <a href="#" class="title m-3" style="color: #686868">Shopify Plus</a>
-          <a href="#" class="title m-3" style="color: #686868">Careeres</a>
-          <a href="#" class="title m-3" style="color: #686868">Investore</a>
-          <a href="#" class="title m-3" style="color: #686868"
-            >Press and Media</a
-          >
+          <a href="#" class="title m-3">About Shopify</a>
+          <a href="#" class="title m-3">Shopify Plus</a>
+          <a href="#" class="title m-3">Careeres</a>
+          <a href="#" class="title m-3">Investore</a>
+          <a href="#" class="title m-3">Press and Media</a>
         </div>
       </div>
     </div>
+    <!-- end box-1 -->
+
+    <!-- box-2 -->
+    <div class="box-2">
+      <!-- Footer -->
+      <footer
+        class="page-footer"
+        style="border-top-left-radius: 25px; border-top-right-radius: 25px"
+      >
+        <div class="container">
+          <div class="row">
+            <div
+              class="container col col-xl-2 col-lg-2 col-md-4 col-6"
+            >
+              <div class="mt-4">
+                <p class="font-weight-bold">News and updates</p>
+                <a href="#"> Develpoer changelog </a>
+                <br />
+                <a href="#"> Shopify status </a>
+              </div>
+            </div>
+            <div class="col col-xl-2 col-lg-2 col-md-4 col-6">
+              <div class="mt-4">
+                <p class="font-weight-bold">Blogs</p>
+                <a href="#"> Partner blog </a>
+                <br />
+                <a href="#"> Engineering blog </a>
+                <br />
+                <a href="#"> UX blog </a>
+              </div>
+            </div>
+            <div class="col col-xl-2 col-lg-2 col-md-4 col-6">
+              <div class="mt-4">
+                <p class="font-weight-bold">Community</p>
+                <a href="#"> Develpoer forums </a>
+                <a href="#"> Devs Discord </a>
+                <br />
+                <a href="#"> Facebook group </a>
+              </div>
+            </div>
+            <div class="col col-xl-2 col-lg-2 col-md-4 col-6">
+              <div class="mt-4">
+                <p class="font-weight-bold">Social</p>
+                <a href="#"
+                  ><i class="fa-brands fa-twitch"></i>
+                  Twitch
+                </a>
+                <br />
+                <a href="#"
+                  ><i class="fa-brands fa-youtube"></i>
+                  Youtube
+                </a>
+                <br />
+                <a href="#"
+                  ><i class="fa-brands fa-twitter"></i>
+                  Twitter
+                </a>
+              </div>
+            </div>
+            <div class="col col-xl-2 col-lg-2 col-md-4 col-6">
+              <div class="mt-4">
+                <p class="font-weight-bold">Events</p>
+                <a href="#"> Unite </a>
+                <br />
+                <a href="#"> Meetups </a>
+                <br />
+                <a href="#"> Partner Town Hall </a>
+              </div>
+            </div>
+            <div class="col col-xl-2 col-lg-2 col-md-4 col-6">
+              <div class="mt-4">
+                <p class="font-weight-bold">Terms of Service</p>
+                <a href="#"> API Terms of Sevice </a>
+                <br />
+                <a href="#"> Privacy policy </a>
+                <br />
+                <a href="#"> Partner program agreement </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer py-3">
+          <div class="container">
+            <a href="#" class="title m-3">About Shopify</a>
+            <a href="#" class="title m-3">Shopify Plus</a>
+            <a href="#" class="title m-3">Careeres</a>
+            <a href="#" class="title m-3">Investore</a>
+            <a href="#" class="title m-3">Press and Media</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- end box-2 -->
   </body>
 </html>

@@ -1,16 +1,21 @@
 :root{
-    --light: #ffffff;
-    --dark: #26282C;
+    --light: rgba(243,244,246,0.9);
+    --dark:rgb(32, 35, 39); 
+    --darkky: rgb(32, 37, 44);
+    --lightty: rgba(243,244,246,0.9);
 }
 
+/* css darkmode-1 */
 html, body{
     background: var(--dark);
     color: var(--light);
 }
 
 html[data-theme="light"]{
-    --dark: #ffffff;
-    --light: #26282C;
+    --dark: rgba(243,244,246,0.9);
+    --light: rgb(32, 35, 39);
+    --lightty:rgb(22, 26, 32); 
+    --darkky: rgba(238, 238, 238, 0.9);
 }
 
 .light{
@@ -35,22 +40,22 @@ html[data-theme="light"]{
     transition: transform 0.5s;
 }
 
+/* end cssdarkmode-1 */
+
 .btn-cd{
     padding: 15px;
     font-family: "Roboto",sans-serif;
-    background-color: #e4e4e4;
-    font-weight: bold;
-    width: auto;
-    height: auto;
+    background: var(--darkky);
     text-decoration: none;
-    color: #000000;
+    color: var(--light);
     border-radius: 10px;
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1 10px rgba(0, 0, 0, 0.1);
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     -webkit-transition-property: box-shadow, transform;
     transition-property: box-shadow, transform;
+    border: 1px solid rgb(160, 160, 160);
 }
 
 .btn-cd:hover, .btn-cd:focus, .btn-cd:active{
@@ -58,12 +63,26 @@ html[data-theme="light"]{
     -webkit-transform: scale(1.1);
 }
 
+.navbar{
+    background-color: var(--dark);
+    color: var(--dark);
+}
+
 .card-banner{
-    background-color: rgb(220, 240, 224);
+    background-color: var(--darkky);
     border-radius: 25px;
-    color: #26282C;
+    color: var(--lightty);
     padding: 5px;
     margin: 5px;
+    border: 1px solid cadetblue;
+}
+
+.card-pay{
+    padding: 10px;
+    border: 1px solid;
+    height: auto;
+    width: auto;
+
 }
 
 .card-commu{
@@ -80,12 +99,12 @@ html[data-theme="light"]{
 .btn-commu{
     padding: 10px;
     font-family: "Roboto",sans-serif;
-    background-color: #e4e4e4;
+    background-color: var(--darkky);
     font-weight: bold;
     width: auto;
     height: 150px;
     text-decoration: none;
-    color: #000000;
+    color: var(--btn-light);
     border-radius: 10px;
     border-color: #000000;
     cursor: pointer;
@@ -94,6 +113,7 @@ html[data-theme="light"]{
     transition-duration: 0.3s;
     -webkit-transition-property: box-shadow, transform;
     transition-property: box-shadow, transform;
+    border: 1px solid rgb(160, 160, 160);
 }
 
 .btn-commu:hover, .btn-commu:focus, .btn-commu:active{
@@ -106,6 +126,7 @@ html[data-theme="light"]{
     font-size: 13px;
     font-weight: lighter;
     margin-top: 10px;
+    text-decoration: none;
 }
 
 .commutext{
@@ -114,43 +135,14 @@ html[data-theme="light"]{
     font-weight: bold;
 }
 
-/* Search */
+/* Search ลองหาเทมเพลตแบบใหม่ อันนี้ไม่ work ตอนเปลี่ยนสลับ dark mode */
 
- *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto",sans-serif;
 }
-/* a, a:hover{
-    text-decoration: none;
-} */
-
-/* .searchbox{
-    position: relative;
-} */
-
-/* .searchtext{
-    width: 25rem;
-    padding: 2px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    transition: all 0.2s linear;
-} */
-
-/* .searchtext:focus{
-    outline: none;
-} */
-
-/* .searchbtn{
-    width: 5rem;
-    height: 5rem;
-    position: absolute;
-    right: 1rem;
-    display: grid;
-    place-items: center;
-} */
 
 .input-box{
     position: relative;
@@ -159,7 +151,7 @@ html[data-theme="light"]{
     width: 100%;
     margin: 0 30px;
     border-radius: 6px;
-    background-color: #ffffff;
+    border: 1px solid;
 }
 
 .input-box input{
@@ -190,14 +182,15 @@ html[data-theme="light"]{
     padding: 5px;
 }
 
-/* .search-box{
-    background-color: #000000;
-    position: absolute;
-    top: 55px;
-    right: 29px;
-    width: 300px;
-    height: 55px;
-    line-height: 60px;
-    box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
-    border-top: 4px solid #000000;
-} */
+/* ทำให้ box-1 ซ่อน ตอน scale หน้าจอขนาดเล็กกว่า col-xl */
+.box-1{
+    background-color: var(--darkky);
+    display: block;
+}
+
+.box-2{
+    background-color: var(--darkky);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: none;
+}
