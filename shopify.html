@@ -25,41 +25,40 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top navbar">
-      <div class="container">
-        <a href="#" class="navbar-brand">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/5968/5968919.png"
-            style="position: relative; top: 1px; width: 25px"
-            class="d-inlind-block align-top"
-          />
-          .dev
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="fa-solid fa-bars"></span>
-        </button>
-        <!-- Menu bar -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="fa-solid fa-bars"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <div class="container">
+          <a href="#" class="navbar-brand">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/5968/5968919.png"
+              style="position: relative; top: 1px; width: 25px"
+              class="d-inlind-block align-top"
+            />
+            .dev
+          </a>
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a href="#" class="nav-link">Apps</a>
+              <a class="nav-link" href="#">Apps</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Themes</a>
+              <a class="nav-link" href="#">Themes</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Custom storefronts</a>
+              <a class="nav-link" href="#">Custom storefronts</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Marketplaces</a>
+              <a class="nav-link" href="#">Marketplaces</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -72,13 +71,13 @@
                 APIs and references
               </a>
               <ul class="dropdown-menu">
-                <p class="dropdown-item">Apps</p>
-                <p href="#" class="dropdown-item">GraphQL Admin API</p>
+                <h6 class="dropdown-item">Apps</h6>
+                <a href="#" class="dropdown-item">GraphQL Admin API</a>
                 <a href="#" class="dropdown-item">REST Admin API</a>
-                <p class="dropdown-item">Themes</p>
+                <h6 class="dropdown-item">Themes</h6>
                 <a href="#" class="dropdown-item">Liquid</a>
                 <a href="#" class="dropdown-item">Ajax API</a>
-                <p class="dropdown-item">Custom storefronts</p>
+                <h6 class="dropdown-item">Custom storefronts</h6>
                 <a href="#" class="dropdown-item">Storefront API</a>
                 <a href="#" class="dropdown-item">Hydrogen</a>
                 <br />
@@ -89,11 +88,14 @@
             </li>
           </ul>
           <ul class="navbar-nav ml-auto">
-            <div class="input-box m-2" style="align-items: center">
-              <input type="text" placeholder="Search" />
-              <span class="search"><i class="fa fa-search"></i></span>
-            </div>
-  
+            <!-- search box -->
+            <li class="active">
+              <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+              <div class="search-box">
+                <input type="text" placeholder=" Search" />
+                <input type="button" value="Search" />
+              </div>
+            </li>
             <!-- dark mode -->
             <i class="nav-item fas fa-sun fa-2x theme_icon"></i>
             <li class="nav-item">
@@ -139,16 +141,17 @@
         <div class="col col-xl-6 col-lg-12 col-md-12 col-12 order-2 order-xl-1">
           <h4>Develop apps that solve complex merchant problems</h4>
           <p>
-            Expansive<a href="#"> GraphQL</a> and <a href="#">REST APIs</a> let
-            you integrate into Shopify's admin, online store, checkout, and
-            more.
+            Expansive <a href="#" class="linkky">GraphQL</a> and
+            <a href="#" class="linkky">REST APIs</a> let you integrate into
+            Shopify's admin, online store, checkout, and more.
           </p>
           <br />
           <h4>Integrate seamlessly into existing workflows</h4>
           <p>
-            Embed your app’s features with <a href="#">App Bridge.</a> Create
-            high quality experiences with the ready-to-build
-            <a href="#">Polaris</a> component library.
+            Embed your app’s features with
+            <a href="#" class="linkky">App Bridge.</a> Create high quality
+            experiences with the ready-to-build
+            <a href="#" class="linkky">Polaris</a> component library.
           </p>
           <br />
         </div>
@@ -165,16 +168,17 @@
         <div class="col col-xl-6 col-lg-12 col-md-12 col-12">
           <h4>Help merchants express themselves</h4>
           <p>
-            Use <a href="#">Liquid</a> to build beautiful theme templates. Get
-            started with <a href="#">Dawn</a>, our blazingly fast, accessible
-            reference theme.
+            Use <a href="#" class="linkky">Liquid</a> to build beautiful theme
+            templates. Get started with <a href="#" class="linkky">Dawn</a>, our
+            blazingly fast, accessible reference theme.
           </p>
           <br />
           <h4>Ship custom shopping experiences</h4>
           <p>
             Add Shopify to any web, mobile, or gaming experience with the
-            powerful <a href="#">Storefront API</a> and SDKs, plus any front-end
-            stack you want. Use <a href="#">Marketplace Kit</a> to connect your
+            powerful <a href="#" class="linkky">Storefront API</a> and SDKs,
+            plus any front-end stack you want. Use
+            <a href="#" class="linkky">Marketplace Kit</a> to connect your
             platform and its users to millions of Shopify merchants and their
             products.
           </p>
@@ -226,15 +230,15 @@
           <p>
             Get your app in front of the right merchants. With personalized
             recommendations and multiple billing options, the
-            <a href="#">Shopify App Store</a>
+            <a href="#" class="linkky">Shopify App Store</a>
             is where merchants go to find the apps their business needs most.
           </p>
           <br />
           <h4>Theme Store</h4>
           <p>
             Sell your theme to merchants building their brands on the
-            <a href="#">Shopify Theme Store</a>, which offers flexible pricing
-            and targeted merchandising.
+            <a href="#" class="linkky">Shopify Theme Store</a>, which offers
+            flexible pricing and targeted merchandising.
           </p>
         </div>
       </div>
@@ -324,53 +328,52 @@
     <!-- footer ตัวอย่างในจอเว็บจะลอยไม่ติดขอบล่าง แต่พอย่อจอขนาดเล็กกว่าจอเว็บบน desktop ขอบ footer จะติดขอบล่างตามปกติ พี่แนนแนะนำให้ทำเป็น 2 box แล้วซ่อนเอาด้วย display none/display block -->
     <!-- box-1 -->
     <div
-      id="box-1"
-      class="m-4 box-1"
-      style="border-radius: 25px;"
+      class="m-4 box-1 d-sm-none d-md-none d-lg-none d-xl-block"
+      style="border-radius: 25px"
     >
       <div class="container">
         <div class="row">
           <div class="col col-xl-2 col-lg-2 col-md-4 col-6">
             <div class="mt-3">
               <p class="font-weight-bold">News and updates</p>
-              <a href="#"> Develpoer changelog </a>
+              <a href="#" class="footty"> Develpoer changelog </a>
               <br />
-              <a href="#"> Shopify status </a>
+              <a href="#" class="footty"> Shopify status </a>
             </div>
           </div>
           <div class="col col-xl-2 col-lg-2 col-md-4 col-6">
             <div class="mt-3">
               <p class="font-weight-bold">Blogs</p>
-              <a href="#"> Partner blog </a>
+              <a href="#" class="footty"> Partner blog </a>
               <br />
-              <a href="#"> Engineering blog </a>
+              <a href="#" class="footty"> Engineering blog </a>
               <br />
-              <a href="#"> UX blog </a>
+              <a href="#" class="footty"> UX blog </a>
             </div>
           </div>
           <div class="col col-xl-2 col-lg-2 col-md-4 col-6">
             <div class="mt-3">
               <p class="font-weight-bold">Community</p>
-              <a href="#"> Develpoer forums </a>
-              <a href="#"> Devs Discord </a>
+              <a href="#" class="footty"> Develpoer forums </a>
+              <a href="#" class="footty"> Devs Discord </a>
               <br />
-              <a href="#"> Facebook group </a>
+              <a href="#" class="footty"> Facebook group </a>
             </div>
           </div>
           <div class="col col-xl-2 col-lg-2 col-md-4 col-6">
             <div class="mt-3">
               <p class="font-weight-bold">Social</p>
-              <a href="#"
+              <a href="#" class="footty"
                 ><i class="fa-brands fa-twitch"></i>
                 Twitch
               </a>
               <br />
-              <a href="#"
+              <a href="#" class="footty"
                 ><i class="fa-brands fa-youtube"></i>
                 Youtube
               </a>
               <br />
-              <a href="#"
+              <a href="#" class="footty"
                 ><i class="fa-brands fa-twitter"></i>
                 Twitter
               </a>
@@ -379,21 +382,21 @@
           <div class="col col-xl-2 col-lg-2 col-md-4 col-6">
             <div class="mt-3">
               <p class="font-weight-bold">Events</p>
-              <a href="#"> Unite </a>
+              <a href="#" class="footty"> Unite </a>
               <br />
-              <a href="#"> Meetups </a>
+              <a href="#" class="footty"> Meetups </a>
               <br />
-              <a href="#"> Partner Town Hall </a>
+              <a href="#" class="footty"> Partner Town Hall </a>
             </div>
           </div>
           <div class="col col-xl-2 col-lg-2 col-md-4 col-6">
             <div class="mt-3">
               <p class="font-weight-bold">Terms of Service</p>
-              <a href="#"> API Terms of Sevice </a>
+              <a href="#" class="footty"> API Terms of Sevice </a>
               <br />
-              <a href="#"> Privacy policy </a>
+              <a href="#" class="footty"> Privacy policy </a>
               <br />
-              <a href="#"> Partner program agreement </a>
+              <a href="#" class="footty"> Partner program agreement </a>
             </div>
           </div>
         </div>
@@ -407,18 +410,18 @@
         "
       >
         <div class="container mb-3">
-          <a href="#" class="title m-3">About Shopify</a>
-          <a href="#" class="title m-3">Shopify Plus</a>
-          <a href="#" class="title m-3">Careeres</a>
-          <a href="#" class="title m-3">Investore</a>
-          <a href="#" class="title m-3">Press and Media</a>
+          <a href="#" class="m-3 footty">About Shopify</a>
+          <a href="#" class="m-3 footty">Shopify Plus</a>
+          <a href="#" class="m-3 footty">Careeres</a>
+          <a href="#" class="m-3 footty">Investore</a>
+          <a href="#" class="m-3 footty">Press and Media</a>
         </div>
       </div>
     </div>
     <!-- end box-1 -->
 
     <!-- box-2 -->
-    <div class="box-2">
+    <div class="box-2 d-xl-none d-lg-block">
       <!-- Footer -->
       <footer
         class="page-footer"
@@ -426,49 +429,47 @@
       >
         <div class="container">
           <div class="row">
-            <div
-              class="container col col-xl-2 col-lg-2 col-md-4 col-6"
-            >
+            <div class="container col col-xl-2 col-lg-2 col-md-4 col-6">
               <div class="mt-4">
                 <p class="font-weight-bold">News and updates</p>
-                <a href="#"> Develpoer changelog </a>
+                <a href="#" class="footty"> Develpoer changelog </a>
                 <br />
-                <a href="#"> Shopify status </a>
+                <a href="#" class="footty"> Shopify status </a>
               </div>
             </div>
             <div class="col col-xl-2 col-lg-2 col-md-4 col-6">
               <div class="mt-4">
                 <p class="font-weight-bold">Blogs</p>
-                <a href="#"> Partner blog </a>
+                <a href="#" class="footty"> Partner blog </a>
                 <br />
-                <a href="#"> Engineering blog </a>
+                <a href="#" class="footty"> Engineering blog </a>
                 <br />
-                <a href="#"> UX blog </a>
+                <a href="#" class="footty"> UX blog </a>
               </div>
             </div>
             <div class="col col-xl-2 col-lg-2 col-md-4 col-6">
               <div class="mt-4">
                 <p class="font-weight-bold">Community</p>
-                <a href="#"> Develpoer forums </a>
-                <a href="#"> Devs Discord </a>
+                <a href="#" class="footty"> Develpoer forums </a>
+                <a href="#" class="footty"> Devs Discord </a>
                 <br />
-                <a href="#"> Facebook group </a>
+                <a href="#" class="footty"> Facebook group </a>
               </div>
             </div>
             <div class="col col-xl-2 col-lg-2 col-md-4 col-6">
               <div class="mt-4">
                 <p class="font-weight-bold">Social</p>
-                <a href="#"
+                <a href="#" class="footty"
                   ><i class="fa-brands fa-twitch"></i>
                   Twitch
                 </a>
                 <br />
-                <a href="#"
+                <a href="#" class="footty"
                   ><i class="fa-brands fa-youtube"></i>
                   Youtube
                 </a>
                 <br />
-                <a href="#"
+                <a href="#" class="footty"
                   ><i class="fa-brands fa-twitter"></i>
                   Twitter
                 </a>
@@ -477,32 +478,32 @@
             <div class="col col-xl-2 col-lg-2 col-md-4 col-6">
               <div class="mt-4">
                 <p class="font-weight-bold">Events</p>
-                <a href="#"> Unite </a>
+                <a href="#" class="footty"> Unite </a>
                 <br />
-                <a href="#"> Meetups </a>
+                <a href="#" class="footty"> Meetups </a>
                 <br />
-                <a href="#"> Partner Town Hall </a>
+                <a href="#" class="footty"> Partner Town Hall </a>
               </div>
             </div>
             <div class="col col-xl-2 col-lg-2 col-md-4 col-6">
               <div class="mt-4">
                 <p class="font-weight-bold">Terms of Service</p>
-                <a href="#"> API Terms of Sevice </a>
+                <a href="#" class="footty"> API Terms of Sevice </a>
                 <br />
-                <a href="#"> Privacy policy </a>
+                <a href="#" class="footty"> Privacy policy </a>
                 <br />
-                <a href="#"> Partner program agreement </a>
+                <a href="#" class="footty"> Partner program agreement </a>
               </div>
             </div>
           </div>
         </div>
         <div class="card-footer py-3">
           <div class="container">
-            <a href="#" class="title m-3">About Shopify</a>
-            <a href="#" class="title m-3">Shopify Plus</a>
-            <a href="#" class="title m-3">Careeres</a>
-            <a href="#" class="title m-3">Investore</a>
-            <a href="#" class="title m-3">Press and Media</a>
+            <a href="#" class="m-3 footty">About Shopify</a>
+            <a href="#" class="m-3 footty">Shopify Plus</a>
+            <a href="#" class="m-3 footty">Careeres</a>
+            <a href="#" class="m-3 footty">Investore</a>
+            <a href="#" class="m-3 footty">Press and Media</a>
           </div>
         </div>
       </footer>
