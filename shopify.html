@@ -26,39 +26,56 @@
 
   <body>
     <nav class="navbar navbar-expand-lg sticky-top">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarTogglerDemo01"
-        aria-controls="navbarTogglerDemo01"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="fa-solid fa-bars"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <div class="container">
-          <a href="#" class="navbar-brand">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/5968/5968919.png"
-              style="position: relative; top: 1px; width: 25px"
-              class="d-inlind-block align-top"
-            />
-            .dev
-          </a>
-          <ul class="navbar-nav mr-auto">
+      <div class="container">
+        <a href="#" class="navbar-brand d-none d-lg-block d-xl-block">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5968/5968919.png"
+            style="position: relative; top: 1px; width: 25px"
+          />
+          .dev
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="fa-solid fa-bars"></span>
+        </button>
+        <a
+          href="#"
+          class="navbar-brand-2 d-sm-block d-md-block d-lg-none d-xl-none"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5968/5968919.png"
+            style="position: relative; width: 25px"
+          />
+          .dev
+        </a>
+        <li class="ml-auto d-sm-block d-md-block d-lg-none d-xl-none">
+          <i class="fa fa-search ics" aria-hidden="true"></i>
+          <div class="search-box">
+            <input type="text" placeholder=" Search" />
+            <input type="button" value="Search" />
+          </div>
+        </li>
+        <!-- Menu bar -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">Apps</a>
+              <a href="#" class="nav-link">Apps</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Themes</a>
+              <a href="#" class="nav-link">Themes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Custom storefronts</a>
+              <a href="#" class="nav-link">Custom storefronts</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Marketplaces</a>
+              <a href="#" class="nav-link">Marketplaces</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -71,13 +88,13 @@
                 APIs and references
               </a>
               <ul class="dropdown-menu">
-                <h6 class="dropdown-item">Apps</h6>
+                <p class="dropdown-item">Apps</p>
                 <a href="#" class="dropdown-item">GraphQL Admin API</a>
                 <a href="#" class="dropdown-item">REST Admin API</a>
-                <h6 class="dropdown-item">Themes</h6>
+                <p class="dropdown-item">Themes</p>
                 <a href="#" class="dropdown-item">Liquid</a>
                 <a href="#" class="dropdown-item">Ajax API</a>
-                <h6 class="dropdown-item">Custom storefronts</h6>
+                <p class="dropdown-item">Custom storefronts</p>
                 <a href="#" class="dropdown-item">Storefront API</a>
                 <a href="#" class="dropdown-item">Hydrogen</a>
                 <br />
@@ -88,16 +105,24 @@
             </li>
           </ul>
           <ul class="navbar-nav ml-auto">
-            <!-- search box -->
-            <li class="active">
-              <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+            <li class="active-2 ml-auto d-none d-lg-none d-xl-block">
+              <div id="search" class="search">
+                <i class="fa fa-search"></i><a> Search</a>
+              </div>
+              <div class="search-box">
+                <input type="text" placeholder=" Search" />
+                <input type="button" value="Search" />
+              </div>
+            </li>
+            <li class="active ml-auto d-none d-lg-block d-xl-none">
+              <i class="fa fa-search" aria-hidden="true"></i>
               <div class="search-box">
                 <input type="text" placeholder=" Search" />
                 <input type="button" value="Search" />
               </div>
             </li>
             <!-- dark mode -->
-            <i class="nav-item fas fa-sun fa-2x theme_icon"></i>
+            <i class="nav-item fas fa-sun theme_icon icdm"></i>
             <li class="nav-item">
               <a href="#" class="nav-link">Log in</a>
             </li>
